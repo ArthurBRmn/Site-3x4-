@@ -86,10 +86,6 @@ p {
     display: block;
 }
 
-.card_produto {
-
-}
-
 .instrucao {
     margin: 0;
     color: rgba(255, 255, 255, 0.7);
@@ -392,5 +388,89 @@ button:hover {
     .conteudo-seo {
         width: 92%;
         padding: 21px 18px;
+    }
+}
+
+/* Layout mais compacto em celulares */
+@media (max-width: 600px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        margin: 18px auto 10px;
+        padding: 16px 14px;
+    }
+
+    .container > h1 {
+        margin: 0 0 6px;
+        font-size: 32px;
+    }
+
+    .descricao-principal {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .card {
+        width: 100%;
+        margin: 14px auto;
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .area-cropper {
+        width: min(100%, 200px);
+        max-width: 200px;
+        aspect-ratio: 3 / 4;
+        height: auto;
+    }
+
+    .botoes {
+        gap: 8px;
+    }
+
+    .titulo-produtos {
+        margin-top: 12px;
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .container_produto {
+        height: 108px;
+        margin-bottom: 24px;
+    }
+
+    .conteudo-seo {
+        margin-bottom: 22px;
+        padding: 16px;
+        line-height: 1.5;
+    }
+
+    .conteudo-seo h2 {
+        font-size: 19px;
+    }
+
+    .conteudo-seo h2:not(:first-child) {
+        margin-top: 18px;
+    }
+
+    .conteudo-seo h3 {
+        margin-top: 14px;
+        font-size: 16px;
+    }
+
+    .conteudo-seo p {
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: 1.5;
     }
 }
