@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Faça sua foto 3x4 online grátis pelo celular ou computador. Ajuste o recorte e baixe seu retrato para documentos, cadastros e lembranças. Confira as regras do documento antes de usar.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Foto 3x4 Online Grátis | Recorte para Documentos e Retratos">
+    <meta property="og:description" content="Ajuste e baixe sua foto 3x4 online pelo celular ou computador.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Foto 3x4 Online Grátis | Documentos e Retratos</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Foto 3x4 Online</h1>
+
+        <p class="descricao-principal">Faça uma foto 3x4 online para documentos, cadastros, retratos de casal e outras lembranças.</p>
+    
+        <div class = "card">
+
+            <h2>Escolha sua foto</h2>
+
+            <p class="instrucao">
+                Selecione uma foto e ajuste o enquadramento.
+            </p>
+
+             <div class="area-cropper">
+
+                    <button id="remover">
+                        X
+                    </button>
+
+                <div id="icone-foto" aria-hidden="true">
+                    <svg class="icone-camera" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20.5C12 18.57 13.57 17 15.5 17H23L27 12H39L43 17H48.5C50.43 17 52 18.57 52 20.5V46.5C52 48.43 50.43 50 48.5 50H15.5C13.57 50 12 48.43 12 46.5V20.5Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        <circle cx="32" cy="33" r="9" stroke="currentColor" stroke-width="3"/>
+                        <circle cx="46" cy="23" r="2" fill="currentColor"/>
+                    </svg>
+                </div>
+
+                <img id="preview" alt="">
+            
+            </div>
+
+            <input type="file" id="foto" accept="image/*">
+
+                <div class = "botoes">
+
+                    <label for="foto" class="botao-arquivo">
+                        Escolher arquivo
+                    </label>
+
+                    <button id="confirmar">Confirmar recorte</button>
+
+                </div>
+
+            <img id="resultado" alt="">
+
+        </div>
+
+    </div>
+
+    <h2 class="titulo-produtos">Produtos recomendados</h2>
+    <div class = "container_produto">
+
+        <a href="LINK1" target="_blank">
+            <img src="TESTE.png" alt="Produto 1">
+        </a>
+
+        <a href="LINK2" target="_blank">
+            <img src="TESTE.png" alt="Produto 2">
+        </a>
+
+        <a href="LINK3" target="_blank">
+            <img src="TESTE.png" alt="Produto 3">
+        </a>
+
+         <a href="LINK4" target="_blank">
+            <img src="TESTE.png" alt="Produto 4">
+        </a>
+
+        <div class= "card_produto"> 
+
+
+
+        </div>
+
+    </div>
+
+    <section class="conteudo-seo" aria-labelledby="titulo-usos">
+        <h2 id="titulo-usos">Uma foto 3x4 para diferentes ocasiões</h2>
+        <p>Use o recorte vertical 3:4 para preparar retratos para documentos, crachás, cadastros ou para guardar uma foto especial. Também dá para enquadrar uma foto de casal, desde que as duas pessoas caibam dentro da área de recorte.</p>
+        <p><strong>Vai usar em um documento?</strong> As exigências de tamanho, fundo, pose e impressão podem variar conforme o órgão. Confira as instruções oficiais antes de enviar ou imprimir a foto.</p>
+
+        <h2>Como fazer sua foto 3x4 online</h2>
+        <ol>
+            <li>Toque em “Escolher arquivo” e selecione uma foto do celular ou computador.</li>
+            <li>Ajuste o enquadramento vertical para incluir as pessoas que deseja mostrar.</li>
+            <li>Toque em “Confirmar recorte” e baixe o resultado em JPG.</li>
+        </ol>
+
+        <h3>Posso fazer uma foto 3x4 de casal?</h3>
+        <p>Sim. Escolha uma imagem em que os dois apareçam com espaço suficiente e ajuste o recorte para manter ambos dentro da moldura.</p>
+
+        <h3>A foto será aceita em qualquer documento?</h3>
+        <p>Não necessariamente. Cada documento ou instituição pode pedir medidas e padrões diferentes; confirme as regras específicas antes de usar.</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

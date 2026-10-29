@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resultado.css">
+
+    <title>Sua foto 3x4 pronta para baixar</title>
+
+</head>
+
+<body class="pagina-resultado">
+
+    <main class="resultado-card">
+        <header class="resultado-cabecalho">
+            <span class="resultado-etiqueta">PRONTA PARA USAR</span>
+            <h1>Sua foto 3x4</h1>
+            <p>Confira o resultado e baixe sua foto.</p>
+        </header>
+
+        <div class="moldura-foto">
+            <img id="resultado" alt="Sua foto 3x4 pronta">
+        </div>
+
+        <div class="resultado-acoes">
+            <a id="baixar" class="botao baixar" download="foto-3x4.jpg">
+                Baixar foto
+            </a>
+
+            <button class="botao voltar" onclick="window.close()" type="button">
+                Voltar
+            </button>
+        </div>
+    </main>
+
+    <section class="produtos-resultado" aria-labelledby="titulo-produtos">
+        <h2 id="titulo-produtos">Produtos recomendados</h2>
+        <div class="container_produto">
+            <a href="LINK1" target="_blank" rel="noopener noreferrer">
+                <img src="TESTE.png" alt="Produto 1">
+            </a>
+            <a href="LINK2" target="_blank" rel="noopener noreferrer">
+                <img src="TESTE.png" alt="Produto 2">
+            </a>
+            <a href="LINK3" target="_blank" rel="noopener noreferrer">
+                <img src="TESTE.png" alt="Produto 3">
+            </a>
+            <a href="LINK4" target="_blank" rel="noopener noreferrer">
+                <img src="TESTE.png" alt="Produto 4">
+            </a>
+        </div>
+    </section>
+
+
+    <script>
+
+        const imagem = localStorage.getItem("foto3x4");
+
+        const resultado = document.getElementById("resultado");
+        const baixar = document.getElementById("baixar");
+
+        resultado.src = imagem;
+        baixar.href = imagem;
+
+    </script>
+
+</body>
+
+</html>
