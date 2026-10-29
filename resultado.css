@@ -1,154 +1,85 @@
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
 
-body.pagina-resultado {
-    min-height: 100vh;
-    margin: 0;
-    padding: 32px 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: #fff;
-    background: linear-gradient(120deg, #0755b8, #c55de3);
-}
+<html lang="pt-BR">
 
-.resultado-card {
-    width: min(100%, 480px);
-    padding: 36px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 28px;
-    background: rgba(20, 18, 60, 0.88);
-    box-shadow: 0 18px 50px rgba(10, 8, 40, 0.35);
-    backdrop-filter: blur(10px);
-}
+<head>
 
-.resultado-etiqueta {
-    display: inline-block;
-    margin-bottom: 12px;
-    padding: 6px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    border-radius: 999px;
-    color: #e5d5ff;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-}
+    <meta charset="UTF-8">
 
-.resultado-cabecalho h1 {
-    margin: 0;
-    font-size: clamp(28px, 7vw, 38px);
-    line-height: 1.2;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
 
-.resultado-cabecalho p {
-    margin: 10px 0 24px;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 14px;
-    text-transform: none;
-    letter-spacing: 0;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resultado.css">
 
-.produtos-resultado {
-    width: min(70%, 1100px);
-}
+    <title>Sua foto 3x4 pronta para baixar</title>
 
-.produtos-resultado h2 {
-    margin: 0 0 10px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-}
+</head>
 
-.produtos-resultado .container_produto {
-    width: 100%;
-    height: 132px;
-    margin: 0;
-}
+<body class="pagina-resultado">
 
-.moldura-foto {
-    width: min(100%, 225px);
-    aspect-ratio: 3 / 4;
-    margin: 0 auto 28px;
-    overflow: hidden;
-    border: 5px solid rgba(255, 255, 255, 0.92);
-    border-radius: 16px;
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-}
+    <main class="resultado-card">
+        <header class="resultado-cabecalho">
+            <span class="resultado-etiqueta">PRONTA PARA USAR</span>
+            <h1>Sua foto 3x4</h1>
+            <p>Confira o resultado e baixe sua foto.</p>
+        </header>
 
-.moldura-foto img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        <div class="moldura-foto">
+            <img id="resultado" alt="Sua foto 3x4 pronta">
+        </div>
 
-.resultado-acoes {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+        <div class="resultado-acoes">
+            <a id="baixar" class="botao baixar" download="foto-3x4.jpg">
+                Baixar foto
+            </a>
 
-.botao {
-    min-height: 48px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 22px;
-    border: 0;
-    border-radius: 999px;
-    font: 600 15px 'Poppins', Arial, sans-serif;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-}
+            <button class="botao voltar" onclick="window.close()" type="button">
+                Voltar
+            </button>
+        </div>
+    </main>
 
-.botao:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
-}
+    <section class="produtos-resultado" aria-labelledby="titulo-produtos">
+        <h2 id="titulo-produtos">Produtos recomendados</h2>
+        <div class="container_produto">
 
-.botao:focus-visible {
-    outline: 3px solid #fff;
-    outline-offset: 3px;
-}
+           <a href="https://s.shopee.com.br/7puO2IJpAY" target="_blank">
+            <img src="produto1.png" alt="Produto 1">
+        </a>
 
-.baixar {
-    color: #fff;
-    background: linear-gradient(120deg, #0755b8, #c55de3);
-}
+        <a href="https://s.shopee.com.br/AUv9CCCVop" target="_blank">
+            <img src="produto2.png" alt="Produto 2">
+        </a>
 
-.voltar {
-    color: #272044;
-    background: #fff;
-}
+        <a href="https://s.shopee.com.br/AKbj08CRw4" target="_blank">
+            <img src="produto3.png" alt="Produto 3">
+        </a>
 
-@media (max-width: 480px) {
-    body.pagina-resultado {
-        padding: 18px 14px;
-        gap: 18px;
-    }
+         <a href="https://s.shopee.com.br/3qOFH4a0tM" target="_blank">
+            <img src="produto4.png" alt="Produto 4">
+        </a>
+        
+            </a>
+        </div>
+    </section>
 
-    .resultado-card {
-        padding: 28px 22px;
-        border-radius: 24px;
-    }
 
-    .moldura-foto {
-        width: min(100%, 200px);
-    }
+    <script>
 
-    .produtos-resultado {
-        width: 100%;
-    }
+        const imagem = localStorage.getItem("foto3x4");
 
-    .produtos-resultado .container_produto {
-        width: 100%;
-        height: 122px;
-    }
-}
+        const resultado = document.getElementById("resultado");
+        const baixar = document.getElementById("baixar");
+
+        resultado.src = imagem;
+        baixar.href = imagem;
+
+    </script>
+
+</body>
+
+</html>
