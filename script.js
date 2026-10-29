@@ -13,8 +13,6 @@ foto.addEventListener("change", function () {
 
     if (!arquivo) return;
 
-    alert("Foto selecionada com Sucesso!");
-
     iconeFoto.style.display = "none";
 
     confirmar.style.display = "inline-block";
